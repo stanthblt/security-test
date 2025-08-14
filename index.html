@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Sécurité Informatique</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.webp">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barre de progression -->
+    <div class="progress-bar" id="progressBar"></div>
+    
+    <div class="container">
+        <header class="header">
+            <h1>🔐 Testez votre score de sécurité informatique</h1>
+            <p class="subtitle">Réponses anonymes – résultats immédiats</p>
+        </header>
+
+        <div class="intro">
+            <p>Ce questionnaire évalue vos habitudes de cybersécurité sur 4 axes essentiels. Répondez honnêtement pour obtenir un score sur 15 et des conseils personnalisés.</p>
+            <p class="transparency-note">🔒 <strong>Transparence et anonymat :</strong> Vos réponses sont anonymes et ne sont jamais stockées. Le code source de ce formulaire est disponible sur <a href="https://github.com/stanthblt/security-test" target="_blank" rel="noopener noreferrer">GitHub</a> pour garantir la transparence.</p>
+        </div>
+
+        <form id="securityForm" class="form">
+            <!-- Axe 1: Gestion des mots de passe -->
+            <div class="axe-section">
+                <h2 class="axe-title">🔑 Gestion des mots de passe</h2>
+                
+                <div class="question-group">
+                    <h3>Question 1</h3>
+                    <p class="question">Utilisez-vous un mot de passe unique pour chaque compte important (email, banque, réseaux sociaux) ?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q1" value="1" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Oui</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q1" value="0" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Non</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <h3>Question 2</h3>
+                    <p class="question">Vos mots de passe contiennent-ils au moins 12 caractères, avec majuscules, minuscules, chiffres et symboles ?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q2" value="1" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Oui</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q2" value="0" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Non</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <h3>Question 3</h3>
+                    <p class="question">Utilisez-vous un gestionnaire de mots de passe pour stocker et générer vos mots de passe ?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q3" value="1" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Oui</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q3" value="0" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Non</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <h3>Question 4</h3>
+                    <p class="question">Changez-vous vos mots de passe après une fuite de données (ex. alerte HaveIBeenPwned) ?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q4" value="1" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Oui</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q4" value="0" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Non</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Axe 2: Hygiène numérique -->
+            <div class="axe-section">
+                <h2 class="axe-title">💻 Hygiène numérique</h2>
+                
+                <div class="question-group">
+                    <h3>Question 5</h3>
+                    <p class="question">Mettez-vous à jour vos systèmes (Windows, macOS, Linux, iOS, Android) dès que les mises à jour sont disponibles ?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q5" value="1" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Oui</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q5" value="0" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Non</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <h3>Question 6</h3>
+                    <p class="question">Mettez-vous à jour vos logiciels tiers (navigateur, applications, plugins…) régulièrement ?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q6" value="1" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Oui</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q6" value="0" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Non</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <h3>Question 7</h3>
+                    <p class="question">Sauvegardez-vous vos données importantes au moins une fois par mois, sur un support externe ou dans le cloud ?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q7" value="1" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Oui</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q7" value="0" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Non</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <h3>Question 8</h3>
+                    <p class="question">Votre réseau Wi-Fi domestique utilise-t-il WPA2 ou WPA3 avec un mot de passe fort (pas le mot de passe par défaut) ?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q8" value="1" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Oui</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q8" value="0" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Non</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Axe 3: Comportement en ligne -->
+            <div class="axe-section">
+                <h2 class="axe-title">🌐 Comportement en ligne</h2>
+                
+                <div class="question-group">
+                    <h3>Question 9</h3>
+                    <p class="question">Vérifiez-vous toujours l'adresse d'expéditeur et le lien avant de cliquer dans un email ?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q9" value="1" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Oui</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q9" value="0" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Non</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <h3>Question 10</h3>
+                    <p class="question">Utilisez-vous un VPN lorsque vous êtes connecté à un Wi-Fi public ?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q10" value="1" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Oui</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q10" value="0" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Non</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <h3>Question 11</h3>
+                    <p class="question">Évitez-vous de publier des informations personnelles (adresse, date de naissance, lieu de travail) sur les réseaux sociaux ?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q11" value="1" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Oui</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q11" value="0" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Non</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <h3>Question 12</h3>
+                    <p class="question">Vérifiez-vous les permissions que vous donnez aux applications sur votre téléphone ou votre ordinateur ?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q12" value="1" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Oui</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q12" value="0" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Non</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Axe 4: Protection des appareils -->
+            <div class="axe-section">
+                <h2 class="axe-title">🛡️ Protection des appareils</h2>
+                
+                <div class="question-group">
+                    <h3>Question 13</h3>
+                    <p class="question">Vos appareils sont-ils protégés par un code PIN, mot de passe ou biométrie (empreinte, reconnaissance faciale) ?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q13" value="1" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Oui</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q13" value="0" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Non</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <h3>Question 14</h3>
+                    <p class="question">Utilisez-vous un antivirus ou une solution de protection contre les malwares sur vos appareils principaux ?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q14" value="1" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Oui</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q14" value="0" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Non</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <h3>Question 15</h3>
+                    <p class="question">Le disque dur de votre ordinateur (et la mémoire de votre téléphone) est-il chiffré ?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q15" value="1" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Oui</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q15" value="0" required>
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Non</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Calculer mon score</button>
+        </form>
+
+        <div id="results" class="results hidden">
+            <div class="results-header">
+                <h2>Votre Score de Sécurité</h2>
+                <div class="score-display">
+                    <span id="scoreValue" class="score-number">0</span>
+                    <span class="score-max">/ 15</span>
+                </div>
+            </div>
+            
+            <div class="score-category">
+                <div id="scoreIcon" class="score-icon">🚨</div>
+                <h3 id="scoreTitle">Risque très élevé</h3>
+                <p id="scoreDescription">Vos pratiques vous exposent à des attaques.</p>
+            </div>
+
+            <div class="recommendations">
+                <h3>Recommandations personnalisées</h3>
+                <ul id="recommendationsList">
+                    <!-- Les recommandations seront ajoutées dynamiquement -->
+                </ul>
+            </div>
+
+            <button id="restartBtn" class="restart-btn">Recommencer le test</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+    <footer class="copyright">
+        <p>&copy; 2025 Stanislas THABAULT. Tous droits réservés.</p>
+    </footer>
+</body>
+</html> 
