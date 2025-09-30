@@ -36,7 +36,7 @@ Un formulaire interactif et moderne pour évaluer vos habitudes de cybersécurit
 ### 🔑 **Axe 1: Gestion des mots de passe**
 1. **Mots de passe uniques** - Utilisez-vous un mot de passe unique pour chaque compte important ?
 2. **Complexité des mots de passe** - Vos mots de passe contiennent-ils au moins 12 caractères avec majuscules, minuscules, chiffres et symboles ?
-3. **Gestionnaire de mots de passe** - Utilisez-vous un gestionnaire de mots de passe ?
+3. **Gestionnaire de mots de passe** - Utilisez-vous un gestionnaire de mots de passe (Bitwarden, LastPass, Proton Pass) ?
 4. **Changement post-fuite** - Changez-vous vos mots de passe après une fuite de données ?
 
 ### 💻 **Axe 2: Hygiène numérique**
@@ -54,7 +54,7 @@ Un formulaire interactif et moderne pour évaluer vos habitudes de cybersécurit
 ### 🛡️ **Axe 4: Protection des appareils**
 13. **Verrouillage appareils** - Vos appareils sont-ils protégés par un code PIN, mot de passe ou biométrie ?
 14. **Antivirus** - Utilisez-vous un antivirus ou une solution anti-malware ?
-15. **Chiffrement** - Le disque dur de votre ordinateur et la mémoire de votre téléphone sont-ils chiffrés ?
+15. **Chiffrement** - Le disque dur de votre ordinateur (et la mémoire de votre téléphone si possible) sont-ils chiffrés ?
 
 ## 🎨 Design
 
